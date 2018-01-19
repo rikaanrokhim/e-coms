@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2017 at 03:07 AM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.9
+-- Generation Time: Jan 20, 2018 at 12:48 AM
+-- Server version: 10.1.29-MariaDB
+-- PHP Version: 7.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbpos`
+-- Database: `ecoms`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +40,8 @@ CREATE TABLE `tb_admin` (
 --
 
 INSERT INTO `tb_admin` (`id_admin`, `user`, `pass`, `email`) VALUES
-(3, 'a', 'a', 'a');
+(3, 'a', 'a', 'a'),
+(4, 'jyfs', 'rdrd', 'hf@mail');
 
 -- --------------------------------------------------------
 
@@ -71,7 +72,8 @@ CREATE TABLE `tb_barang` (
 --
 
 INSERT INTO `tb_barang` (`id_barang`, `nama`, `id_pen`, `id_kat`, `harga`, `stok`, `deskripsi`, `tags`, `status`, `foto`, `tanggal`, `ukuran1`, `ukuran2`, `ukuran3`, `ukuran4`) VALUES
-(6, 'NIKE AIRMAKE PINK', 1, 18, 100000, 12, '                        sepatu                ', 'sepatu', '1', 'BR_20171027023227.jpg', '2017-10-26 17:00:00', '35', '36', '38', '39');
+(6, 'NIKE AIRMAKE PINK', 1, 18, 100000, 12, '                        sepatu                ', 'sepatu', '1', 'BR_20171027023227.jpg', '2017-10-26 17:00:00', '35', '36', '38', '39'),
+(7, 'NN', 1, 18, 12, 1, 'hh', 'hh', '1', 'BR_20180116082110.jpg', '2018-01-16 08:00:00', '1', '2', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -109,7 +111,7 @@ CREATE TABLE `tb_berita` (
 --
 
 INSERT INTO `tb_berita` (`id_berita`, `judul`, `head`, `isi_ber`, `tanggal`, `at`, `foto`) VALUES
-(1, 'kehilangan barang', 'telah hilang', 'hilang sudah', '2017-10-28', 'ponorogo', 'BR_20171028011818.jpg');
+(8, 'a', 'http://loc', 'http://localhost/e-coms/pages/admin.php', '2018-01-19', 'HGYJH', 'BR_20180118075416.jpg');
 
 -- --------------------------------------------------------
 
@@ -144,8 +146,7 @@ CREATE TABLE `tb_iklan` (
 --
 
 INSERT INTO `tb_iklan` (`id_iklan`, `nama`, `url`, `foto`) VALUES
-(2, 'endorse sepatu', 'http://endorse.com', 'BR_20171028022636.jpg'),
-(3, 'endorse', 'http:/tt.com', 'BR_20171028022659.jpg');
+(13, 'nn', 'http://dora.com', 'BR_20180117053811.jpg');
 
 -- --------------------------------------------------------
 
@@ -363,7 +364,7 @@ ALTER TABLE `tb_admin`
 -- AUTO_INCREMENT for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_barang_c`
@@ -375,7 +376,7 @@ ALTER TABLE `tb_barang_c`
 -- AUTO_INCREMENT for table `tb_berita`
 --
 ALTER TABLE `tb_berita`
-  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tb_berita_c`
@@ -387,7 +388,7 @@ ALTER TABLE `tb_berita_c`
 -- AUTO_INCREMENT for table `tb_iklan`
 --
 ALTER TABLE `tb_iklan`
-  MODIFY `id_iklan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_iklan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `tb_kategori`
