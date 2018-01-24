@@ -1,4 +1,4 @@
-<?php 
+<?php
     include_once  "../lib/class-Db.php";
     include_once  "../lib/class-Ff.php";
 
@@ -8,14 +8,18 @@
     if($user == "")
     {
         $ff->alert('Anda harus login dulu untuk mengakses halaman ini!');
-        $ff->redirect('../index.php');
+        $ff->redirect('login.php');
     }
+
+    // if (! isset($_SESSION['user'])) {
+    // 	redirect('login.php');
+    // }
 ?>
- 
+
 <head>
 <title>Admin Template</title>
 <!-- syarat untuk responsive -->
-<meta name="viewport" content="width=device-width, initial-sclae=1.0"> 
+<meta name="viewport" content="width=device-width, initial-sclae=1.0">
 <link rel="stylesheet" type="text/css" href="../style/admin.css">
 <script scr="../js/jquery-2.1.1.js"></script>
 

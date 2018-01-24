@@ -18,13 +18,12 @@
                 <input type="password" name="pass" placeholder="Youre Password">
 
                 <input type="submit" name="btnsimpan" value="Sign In">
-                
-                <?php 
+
+                <?php
                     include "lib/class-Db.php";
                     include "lib/class-Ff.php";
 
-                    if (isset($_POST['btnsimpan']))
-                    {
+                    if (isset($_POST['btnsimpan'])) {
                         $pass = 'pass';
                         $user = 'user';
 
@@ -37,19 +36,16 @@
 
                         $a = $odb->nur($q);
 
-                        if ($a == 1)
-                        {
+                        if ($a == 1) {
                             session_start();
                             $_SESSION['user']=$user;
                             $ff->alert("Selamat datang $user");
                             $ff->redirect("pages/admin.php");
-                        }
-                        else
-                        {
+                        } else {
                            $ff->alert("Masukkan Username dan Password yang benar!");
                         }
                     }
-                    
+
                 ?>
             </form>
         </div>

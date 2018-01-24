@@ -44,12 +44,12 @@
                 <div class="box-panel">
                     <p>Masukkan Username dan Password Anda</p>
                     <br>
-                    <form method="post" action="login-prosses.php" class="form-container" enctype="multipart/form-data">
+                    <form method="post" action="login-proses.php" class="form-container" enctype="multipart/form-data">
                         Username :
-                        <input type="text" name="username" required="" class="form-field" value="">
+                        <input type="text" name="user" required="" class="form-field" value="">
                         <br>
                         Password :
-                        <input type="password" name="password" required="" class="form-field" value="">
+                        <input type="password" name="pass" required="" class="form-field" value="">
                         <br>
                         <div id="msg-container">
                             <p><i> <?=$err?> </i></p>
