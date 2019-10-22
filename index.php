@@ -16,7 +16,7 @@
 
                 <p>Password</p>
                 <input type="password" name="pass" placeholder="Youre Password">
-
+                   /* form untuk input */
                 <input type="submit" name="btnsimpan" value="Sign In">
 
                 <?php
