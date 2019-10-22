@@ -21,6 +21,7 @@ class Fungsi{
 	function back() {
 		echo "<script>history.back()</script>";
 	}
+	/* fungsi untuk menambahkan / upload gambar */
 	function upload($foto) {
 		$fname = "";
 		$status = 1;
