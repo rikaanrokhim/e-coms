@@ -28,6 +28,7 @@ class Db {
 		$query = $this->db->prepare("insert into $t values($f)");
 		$query->execute();
 	}
+	// fungsi untuk edit (update) data
 	function update($t, $f) {
 		$query = $this->db->prepare("update $t set $f");
 		$query->execute();
