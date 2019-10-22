@@ -35,7 +35,7 @@
                         $q = $odb->select("tb_admin where user='$user' and pass='$pass'");
 
                         $a = $odb->nur($q);
-
+                        /* percabangan untuk mencari hak akses user login */
                         if ($a == 1) {
                             session_start();
                             $_SESSION['user']=$user;
