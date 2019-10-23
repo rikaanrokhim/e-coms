@@ -16,7 +16,7 @@
 
                 <p>Password</p>
                 <input type="password" name="pass" placeholder="Youre Password">
-
+                   /* form untuk input */
                 <input type="submit" name="btnsimpan" value="Sign In">
 
                 <?php
@@ -35,7 +35,7 @@
                         $q = $odb->select("tb_admin where user='$user' and pass='$pass'");
 
                         $a = $odb->nur($q);
-
+                        /* percabangan untuk mencari hak akses user login */
                         if ($a == 1) {
                             session_start();
                             $_SESSION['user']=$user;
